@@ -5,7 +5,7 @@
   "type": "module",
   "homepage": "https://inyourmingzhu.github.io/csi205/",
   "scripts": {
-    "predaploy": "npm run build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d ./dist",
     "dev": "vite",
     "build": "vite build",
