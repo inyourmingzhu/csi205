@@ -1,0 +1,76 @@
+Styles for the animation / bouncing ball page
+.anim-container {
+  max-width: 760px;
+  margin: 12px auto;
+  padding: 8px;
+}
+
+.anim-field {
+  position: relative;
+  background: linear-gradient(180deg, #e6f7ff, #dff3ff);
+  border: 2px solid #bcdff5;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.anim-ball {
+  position: absolute;
+  border-radius: 50%;
+  background-color: #ff8c42;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.18);
+  transition: background-image 160ms ease-in-out;
+}
+
+.anim-control {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.anim-control .btn {
+  margin-right: 6px;
+}
+
+@media (max-width: 640px) {
+  .anim-field { width: 100%; height: 260px; }
+}
+
+.anim-container {
+    margin: auto;
+    border: 1px solid black;
+    width: fit-content;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.anim-field {
+    border: 1px solid black;
+    width: 700px;
+    height: 400px;
+    background-image: url('https://media.istockphoto.com/id/1318680899/de/foto/leichter-naturholzhintergrund.jpg?s=612x612&w=0&k=20&c=Dc9lshGB0yH4Fb2vCWl1bngsVxsXra2cmtTVFmyFPUA=');
+    background-position: contain;
+    background-size: auto;
+    border-radius: 1rem;
+}
+
+.anim-ball {
+    border: 1px solid black;
+    border-radius: 50%;
+
+    width: 200px;
+    height: 200px;
+
+      background-color: pink;
+      background-image: url(./img/basketball.png);
+      background-position: center;
+      background-size: contain; 
+      background-size: cover; 
+      position: relative;
+      left: calc(700px - 200px - 2px); 
+      top: 0px;
+      left: 0px;
+}
